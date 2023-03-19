@@ -1,0 +1,19 @@
+public class Max {
+
+    public static void main(String[] args) {
+        int[] arr = {10,17,19,4};
+
+        System.out.println(maxRange(arr));
+    }
+
+    static int maxRange(int[] arr){
+        int max = 0;
+
+        for (int value:arr) {
+            if(value>max){
+                max = value;
+            }
+        }
+        return max;
+    }
+}
